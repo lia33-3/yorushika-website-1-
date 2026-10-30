@@ -1,0 +1,153 @@
+body {
+    background-color: #F4F3EF;
+    color: #292929;
+    font-family: Georgia, serif;
+}
+
+body {
+    background-image: url("images/background\ \(2\).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.envelope-screen {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.envelope-screen img {
+    width: 150px;
+}
+
+.loading-screen img {
+    width: 180px;
+}
+
+.page-header {
+    text-align: center;
+    padding: 60px 20px;
+}
+.page-header h1 {
+    font-size: 42px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.page-header .subtitle {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #777;
+}
+
+.page-header .description {
+    font-size: 12px;
+    margin-top: 12px;
+    color: #777;
+}
+
+.envelope-open {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.envelope-open img {
+    width: 200px;
+}
+.song-entry {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.song-entry:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.song-entry .video-card img {
+    width: 350px;
+    border-radius: 12px;
+}
+
+.song-info {
+    flex: 1;
+}
+
+.song-collection {
+    max-width: 1025px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.song-entry .song-info .video-title{
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: -5px;
+    margin-bottom: 12px;
+    color: #292929;
+}
+
+.song-number {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #292929;
+}
+
+.song-entry .song-info a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.channel-name {
+    font-size: 13px;
+    color: #777;
+    margin-top: 0;
+}
+
+.video-info {
+    font-size: 12px;
+    color: #777;
+    margin-top: 8px;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.video-card img {
+    width: 300px;
+}
+
+@media (max-width: 700px) {
+    .song-entry {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .song-entry:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .song-entry .video-card {
+        width: 100%;
+    }
+
+    .song-entry .video-card img {
+        width: 100%;
+    }
+}
